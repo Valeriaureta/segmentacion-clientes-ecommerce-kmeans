@@ -6,7 +6,6 @@
 **Metodología:** CRISP-DM  
 **Programa:** Diplomado Data Scientist  
 **Profesor:** Arnaldo Alvarado Vallejos (Chapter Lead BCP)  
-**Fuente de datos:** Dataset de clientes e-commerce en Excel (`ecommerce_customers.xlsx`)  
 
 **Stack:** Python 3.12 | pandas | numpy | matplotlib | seaborn | scikit-learn | openpyxl
 
