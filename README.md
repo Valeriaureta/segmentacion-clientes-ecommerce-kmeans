@@ -21,7 +21,7 @@ El objetivo del proyecto es aplicar técnicas de segmentación no supervisada pa
 **Granularidad del dataset:** Cada registro representa un cliente único identificado por `customer_id`, con sus respectivas características y variables de comportamiento asociadas.
 
 ---
----
+
 ## Estructura del proyecto
 
 ```text
