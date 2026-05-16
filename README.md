@@ -22,18 +22,19 @@ El objetivo del proyecto es aplicar técnicas de segmentación no supervisada pa
 
 ```text
 .
-├── TRABAJO_FINAL_VALERIA_URETA.ipynb              # Notebook principal: EDA, preparación, modelado y reporte final
-├── ecommerce_customers.xlsx                      # Dataset original
-├── clientes_segmentados.xlsx                     # Dataset con etiqueta de segmento
-├── matriz_priorizacion_segmentos.xlsx            # Matriz ejecutiva de priorización comercial
+├── TRABAJO_FINAL_VALERIA_URETA.ipynb           # Notebook principal: EDA, preparación, modelado y reporte final
+├── ecommerce_customers.xlsx                   # Dataset original
+├── clientes_segmentados.xlsx                  # Dataset con etiqueta de segmento
+├── matriz_priorizacion_segmentos.xlsx         # Matriz ejecutiva de priorización comercial
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
 # Notebook Principal
 
-## `TRABAJO_FINAL_VALERIAURETA.ipynb`
+## `TRABAJO_FINAL_VALERIA_URETA.ipynb`
 
 Contiene el flujo completo del proyecto:
 
