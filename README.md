@@ -66,7 +66,7 @@ Contiene el flujo completo del proyecto:
 
 ## 1. Business Understanding
 
-Se identificó que el principal reto no es solo agrupar clientes, sino convertir esos grupos en decisiones accionables.
+Se identificó que la empresa necesita comprender los distintos patrones de comportamiento de sus clientes para evitar campañas genéricas y mejorar la toma de decisiones comerciales. La segmentación permite diferenciar perfiles de alto valor, baja conversión o riesgo de abandono, facilitando estrategias específicas de fidelización, conversión, reactivación y retención.
 
 ---
 
@@ -135,7 +135,8 @@ También se generaron archivos exportables para uso operativo:
 
 - `clientes_segmentados.xlsx`
 - `matriz_priorizacion_segmentos.xlsx`
-
+- 
+Este output permite llevar la segmentación a una herramienta de CRM o marketing automation para activar campañas diferenciadas.
 ---
 
 # Resultado Final
@@ -185,9 +186,3 @@ La segmentación permite pasar de campañas genéricas a campañas personalizada
 
 ---
 
-### Confiabiliad del modelo:
-La confiabilidad del modelo se sustenta en tres criterios:
-
-1. Preparación adecuada de datos: limpieza, tratamiento de outliers y escalamiento.
-2. Evaluación técnica: comparación de K-means con diferentes valores de `k` y revisión de DBSCAN.
-3. Validación de negocio: segmentos interpretables y traducibles en campañas diferenciadas.
