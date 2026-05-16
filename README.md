@@ -183,6 +183,8 @@ La segmentación permite pasar de campañas genéricas a campañas personalizada
 - Mejor asignación del presupuesto de marketing.
 - Priorización de segmentos estratégicos.
 
+---
+
 ### Confiabiliad del modelo:
 La confiabilidad del modelo se sustenta en tres criterios:
 
