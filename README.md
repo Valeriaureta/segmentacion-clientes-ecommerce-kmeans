@@ -68,13 +68,6 @@ Contiene el flujo completo del proyecto:
 
 Se identificó que el principal reto no es solo agrupar clientes, sino convertir esos grupos en decisiones accionables.
 
-La segmentación debe responder preguntas como:
-
-- ¿Qué clientes tienen mayor valor actual?
-- ¿Qué clientes visitan mucho pero compran poco?
-- ¿Qué clientes antiguos muestran señales de baja actividad?
-- ¿Qué grupo debería recibir campañas de retención o reactivación primero?
-
 ---
 
 ## 2. Data Understanding & EDA
@@ -145,18 +138,6 @@ También se generaron archivos exportables para uso operativo:
 
 ---
 
-# Decisiones Clave
-
-- Se excluyó `customer_id` del modelo por ser un identificador.
-- Se aplicó capping para conservar clientes extremos sin distorsionar distancias.
-- Se utilizó escalamiento porque K-means y DBSCAN son sensibles a la escala.
-- DBSCAN fue evaluado pero no seleccionado.
-- K-means fue elegido por interpretabilidad y utilidad operativa.
-- El modelo final utilizó variables conductuales numéricas.
-- Se eligieron 4 clusters por claridad comercial.
-
----
-
 # Resultado Final
 
 El modelo final identifica cuatro segmentos accionables de clientes e-commerce:
@@ -201,3 +182,10 @@ La segmentación permite pasar de campañas genéricas a campañas personalizada
 - Mayor retención de clientes valiosos.
 - Mejor asignación del presupuesto de marketing.
 - Priorización de segmentos estratégicos.
+
+### Confiabiliad del modelo:
+La confiabilidad del modelo se sustenta en tres criterios:
+
+1. Preparación adecuada de datos: limpieza, tratamiento de outliers y escalamiento.
+2. Evaluación técnica: comparación de K-means con diferentes valores de `k` y revisión de DBSCAN.
+3. Validación de negocio: segmentos interpretables y traducibles en campañas diferenciadas.
