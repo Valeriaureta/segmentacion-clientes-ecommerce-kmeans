@@ -135,8 +135,8 @@ También se generaron archivos exportables para uso operativo:
 
 - `clientes_segmentados.xlsx`
 - `matriz_priorizacion_segmentos.xlsx`
-- 
-Este output permite llevar la segmentación a una herramienta de CRM o marketing automation para activar campañas diferenciadas.
+Este output permite llevar la segmentación a una herramienta de CRM o marketing automation para activar campañas diferenciadas
+
 ---
 
 # Resultado Final
