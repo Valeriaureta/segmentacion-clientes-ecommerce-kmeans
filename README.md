@@ -6,7 +6,6 @@
 **Metodología:** CRISP-DM  
 **Programa:** Diplomado Data Scientist  
 **Profesor:** Arnaldo Alvarado Vallejos (Chapter Lead BCP)  
-
 **Stack:** Python 3.12 | pandas | numpy | matplotlib | seaborn | scikit-learn | openpyxl
 
 ---
