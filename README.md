@@ -6,7 +6,7 @@
 **Autor(a):** Valeria Thais Ureta Llanque
 **Metodología:** CRISP-DM  
 **Programa:** Diplomado Data Scientist
-**Autor(a):** Arnaldo Alvarado Vallejos (CHAPTER LEAD BCP)
+**Profesor:** Arnaldo Alvarado Vallejos (CHAPTER LEAD BCP)
 **Fuente de datos:** Dataset de clientes e-commerce en Excel (`ecommerce_customers.xlsx`)    
 **Modelo seleccionado:** K-means clustering  
 **Modelo contrastado:** DBSCAN  
