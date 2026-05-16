@@ -17,6 +17,10 @@ El problema central es que las campañas pueden terminar siendo genéricas: se e
 
 El objetivo del proyecto es aplicar técnicas de segmentación no supervisada para identificar grupos de clientes con comportamientos similares y convertir esos grupos en acciones concretas de marketing, conversión, reactivación y fidelización.
 
+**Dataset:** ecommerce_customers.xlsx  
+**Granularidad del dataset:** Cada registro representa un cliente único identificado por `customer_id`, con sus respectivas características y variables de comportamiento asociadas.
+
+---
 ---
 ## Estructura del proyecto
 
@@ -41,7 +45,7 @@ Contiene el flujo completo del proyecto:
 1. **Business Understanding**  
    Formalización del problema de negocio, objetivo analítico y definición del valor esperado para marketing y retención.
 
-2. **Data Understanding & EDA**  
+2. **EDA**  
    Exploración inicial del dataset, análisis de variables, revisión de nulos, duplicados, distribuciones, categorías, outliers y matriz de correlación.
 
 3. **Data Preparation**  
@@ -111,11 +115,7 @@ Se evaluaron dos algoritmos:
 
 DBSCAN no fue seleccionado porque tendía a generar un solo grupo grande o demasiados puntos de ruido.
 
-K-means fue seleccionado como modelo final por generar segmentos:
-
-- más balanceados,
-- interpretables,
-- accionables para negocio.
+K-means fue seleccionado como modelo final por generar segmentos más balanceados, interpretables y accionables para negocio.
 
 ---
 
