@@ -1,7 +1,6 @@
 # Segmentación Inteligente de Clientes E-commerce con K-means
 
 > Modelo de clustering que identifica perfiles de clientes según gasto, visitas, transacciones, duración de sesión y antigüedad — habilitando campañas personalizadas de conversión, fidelización, reactivación y retención temprana.
-
 <br>
 
 **Autor(a):** Valeria Thais Ureta Llanque
