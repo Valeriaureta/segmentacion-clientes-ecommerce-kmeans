@@ -17,7 +17,7 @@ El problema central es que las campañas pueden terminar siendo genéricas: se e
 
 El objetivo del proyecto es aplicar técnicas de segmentación no supervisada para identificar grupos de clientes con comportamientos similares y convertir esos grupos en acciones concretas de marketing, conversión, reactivación y fidelización.
 
-**Dataset:** ecommerce_customers.xlsx  
+**Dataset:** `ecommerce_customers.xlsx` 
 **Granularidad del dataset:** Cada registro representa un cliente único identificado por `customer_id`, con sus respectivas características y variables de comportamiento asociadas.
 
 ---
