@@ -5,6 +5,7 @@
 **Autor(a):** Valeria Thais Ureta Llanque  
 **Metodología:** CRISP-DM  
 **Programa:** Diplomado Data Scientist  
+**Nota:** 20
 **Profesor:** Arnaldo Alvarado Vallejos (Chapter Lead BCP)  
 **Stack:** Python 3.12 | pandas | numpy | matplotlib | seaborn | scikit-learn | openpyxl
 
