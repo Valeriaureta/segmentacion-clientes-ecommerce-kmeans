@@ -41,160 +41,23 @@ El objetivo del proyecto es aplicar técnicas de segmentación no supervisada pa
 
 ## `TRABAJO_FINAL_VALERIA_URETA.ipynb`
 
-Contiene el flujo completo del proyecto:
+El notebook contiene:
 
-1. **Business Understanding**  
-   Formalización del problema de negocio, objetivo analítico y definición del valor esperado para marketing y retención.
+1. Entendimiento del problema de negocio.
+2. Análisis exploratorio de datos.
+3. Revisión de calidad de datos.
+4. Tratamiento de outliers mediante capping.
+5. Escalamiento de variables numéricas.
+6. Comparación entre DBSCAN y K-means.
+7. Evaluación del número óptimo de clusters.
+8. Perfilamiento de segmentos.
+9. Recomendaciones accionables por segmento.
+10. Exportación de archivos para uso operativo.
 
-2. **EDA**  
-   Exploración inicial del dataset, análisis de variables, revisión de nulos, duplicados, distribuciones, categorías, outliers y matriz de correlación.
-
-3. **Data Preparation**  
-   Limpieza de datos, tratamiento de outliers mediante capping, encoding de variables categóricas y escalamiento de variables numéricas.
-
-4. **Modeling**  
-   Evaluación de DBSCAN y K-means. Se selecciona K-means por su mayor interpretabilidad y utilidad para campañas comerciales.
-
-5. **Evaluation**  
-   Evaluación del número de clusters mediante métricas como inercia, silhouette, Davies-Bouldin y Calinski-Harabasz.
-
-6. **Business Deployment**  
-   Traducción de segmentos en acciones comerciales y exportación de archivos para uso operativo.
+DBSCAN no fue seleccionado porque tendía a generar un solo grupo grande o demasiados puntos de ruido. K-means permitió obtener segmentos más balanceados e interpretables para negocio.
 
 ---
-
-# Hallazgos por Fase
-
-## 1. Business Understanding
-
-Se identificó que la empresa necesita comprender los distintos patrones de comportamiento de sus clientes para evitar campañas genéricas y mejorar la toma de decisiones comerciales. La segmentación permite diferenciar perfiles de alto valor, baja conversión o riesgo de abandono, facilitando estrategias específicas de fidelización, conversión, reactivación y retención.
-
----
-
-## 2. Data Understanding & EDA
-
-El dataset contiene 500 clientes y 8 variables.
-
-- No se identificaron valores nulos.
-- No se encontraron duplicados.
-- `customer_id` funciona como identificador único.
-
-Los análisis exploratorios mostraron diferencias relevantes en:
-
-- gasto,
-- visitas,
-- transacciones,
-- antigüedad.
-
-También se observó que las variables poseen escalas distintas, por lo que fue necesario aplicar escalamiento antes del clustering.
-
----
-
-## 3. Data Preparation
-
-- Se excluyó `customer_id` del modelamiento.
-- Se aplicó tratamiento de outliers mediante capping.
-- Se realizó escalamiento de variables numéricas.
-
-Las variables categóricas se utilizaron principalmente para interpretación posterior de segmentos.
-
----
-
-## 4. Modeling
-
-Se evaluaron dos algoritmos:
-
-- DBSCAN
-- K-means
-
-DBSCAN no fue seleccionado porque tendía a generar un solo grupo grande o demasiados puntos de ruido.
-
-K-means fue seleccionado como modelo final por generar segmentos más balanceados, interpretables y accionables para negocio.
-
----
-
-## 5. Evaluation
-
-Se seleccionó **K-means con 4 clusters** combinando métricas técnicas e interpretabilidad de negocio.
-
-### Segmentos Finales
-
-| Segmento | Descripción |
-|---|---|
-| 0 | Clientes leales y transaccionales |
-| 1 | Visitantes frecuentes de baja conversión |
-| 2 | Clientes antiguos con baja actividad |
-| 3 | Clientes de alto gasto reciente |
-
----
-
-## 6. Business Deployment
-
-Se construyó una matriz de priorización para traducir los clusters en acciones comerciales concretas.
-
-También se generaron archivos exportables para uso operativo:
-
-- `clientes_segmentados.xlsx`
-- `matriz_priorizacion_segmentos.xlsx`
-  
-Este output permite llevar la segmentación a una herramienta de CRM o marketing automation para activar campañas diferenciadas
-
----
-
-# Resultado Final
-
-El modelo final identifica cuatro segmentos accionables de clientes e-commerce:
-
-## 1. Clientes leales y transaccionales
-
-**Recomendación:**  
-Fidelización, beneficios VIP, bundles y aumento de ticket promedio.
-
----
-
-## 2. Visitantes frecuentes de baja conversión
-
-**Recomendación:**  
-Campañas de conversión, remarketing y optimización del checkout.
-
----
-
-## 3. Clientes antiguos con baja actividad
-
-**Recomendación:**  
-Campañas de reactivación y prevención de abandono.
-
----
-
-## 4. Clientes de alto gasto reciente
-
-**Recomendación:**  
-Retención temprana, cross-selling y beneficios por segunda compra.
-
----
-
-# Impacto de Negocio Esperado
-
-La segmentación permite pasar de campañas genéricas a campañas personalizadas por perfil de cliente.
-
-### Beneficios esperados:
-
-- Incremento de ventas.
-- Mejora en la conversión.
-- Reducción del abandono.
-- Mayor retención de clientes valiosos.
-- Mejor asignación del presupuesto de marketing.
-- Priorización de segmentos estratégicos.
-
----
-
-# Evaluación del Modelo
-
-Se evaluaron distintos valores de `k` entre 2 y 8 usando inercia, silhouette, Davies-Bouldin y Calinski-Harabasz. La selección final combinó desempeño técnico e interpretabilidad de negocio.
-
-Se seleccionó **K-means con 4 clusters**, ya que permitió obtener segmentos balanceados, interpretables y accionables para campañas comerciales.
-
-## Métricas del modelo final
+## Métricas del Modelo Final
 
 | Métrica | Valor |
 |---|---:|
@@ -202,3 +65,36 @@ Se seleccionó **K-means con 4 clusters**, ya que permitió obtener segmentos ba
 | Davies-Bouldin | 1.74 |
 | Calinski-Harabasz | 81.98 |
 | Inercia | 1,671.30 |
+
+Aunque el silhouette es moderado, se priorizó una solución interpretable y accionable para campañas comerciales.
+
+---
+## Segmentos Identificados
+
+| Segmento | Perfil | Clientes | % base | Acción principal |
+|---:|---|---:|---:|---|
+| 0 | Clientes leales y transaccionales | 114 | 22.80% | Fidelización y aumento de ticket |
+| 1 | Visitantes frecuentes de baja conversión | 125 | 25.00% | Conversión y remarketing |
+| 2 | Clientes antiguos con baja actividad | 134 | 26.80% | Reactivación y prevención de abandono |
+| 3 | Clientes de alto gasto reciente | 127 | 25.40% | Retención temprana y cross-selling |
+
+---  
+
+## Archivos Generados
+
+- `clientes_segmentados.xlsx`: base de clientes con la etiqueta de segmento asignada.
+- `matriz_priorizacion_segmentos.xlsx`: resumen ejecutivo con prioridades, acciones recomendadas y KPIs sugeridos.
+
+---
+
+## Conclusión
+
+El modelo permitió identificar cuatro segmentos accionables de clientes. La recomendación principal es priorizar la retención temprana del segmento de alto gasto reciente y ejecutar campañas de conversión/reactivación para los segmentos con baja conversión o baja actividad.
+
+---
+
+## Limitaciones
+
+- El dataset contiene 500 clientes.
+- No se cuenta con una variable real de churn o rentabilidad futura.
+- Las recomendaciones deben validarse con campañas piloto o pruebas A/B.
