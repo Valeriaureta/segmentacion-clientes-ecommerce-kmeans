@@ -188,3 +188,17 @@ La segmentación permite pasar de campañas genéricas a campañas personalizada
 
 ---
 
+# Evaluación del Modelo
+
+Se evaluaron distintos valores de `k` entre 2 y 8 usando inercia, silhouette, Davies-Bouldin y Calinski-Harabasz. La selección final combinó desempeño técnico e interpretabilidad de negocio.
+
+Se seleccionó **K-means con 4 clusters**, ya que permitió obtener segmentos balanceados, interpretables y accionables para campañas comerciales.
+
+## Métricas del modelo final
+
+| Métrica | Valor |
+|---|---:|
+| Silhouette Score | 0.15 |
+| Davies-Bouldin | 1.74 |
+| Calinski-Harabasz | 81.98 |
+| Inercia | 1,671.30 |
